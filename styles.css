@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Proxima Nova, 'sans-serif';
+  font-size: 2rem;
+  font-weight: 350;
+  line-height: 1.35;
+}
+
+#navbar {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #046276;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 10%;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin-right: 1.5rem;
+}
+
+.nav-list a {
+  text-decoration: none;
+  padding: 2.4rem;
+  color: white
+}
+
+#welcome-section {
+  background: linear-gradient(117.5deg,
+     #3b444b 0%,
+     #3b444b 33.4%,
+     #232b2b 67.6%,
+     #232b2b 100%
+  );
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome-section h1 {
+  color: #f5f5f5;
+  font-size: 5rem;
+}
+
+#welcome-section p {
+  color: #046276;
+  font-size: 2.2rem;
+  font-style: italic;
+  font-weight: 200;
+}
+
+
+#projects {
+  margin: 0 auto;
+  text-align: center;
+  background: linear-gradient(22.5deg,
+               #209dc8 0%,
+               #209dc8 33.4%,
+               #d2691e 66.6%,
+               #d2691e 100%
+  );
+}
+
+#projects h2 {
+  font-size: 3rem;
+  color: white;
+  margin: 0 auto 2rem auto;
+  border-bottom: 0.2rem solid white;
+  max-width: 800px;
+  padding: 1.15rem;
+}
+
+.project-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-tile {
+  font-size: 2rem;
+  color: black;
+  text-decoration: none;
+  font-style: italic;
+}
+
+ol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-2 {
+  margin-left: 4.6rem;
+}
+
+.project-tile:hover {
+  color: 	#8c6028;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 80vh;
+  padding: 0 2rem;
+  background: linear-gradient(117.5deg,
+     #3b444b 0%,
+     #3b444b 33.4%,
+     #232b2b 67.6%,
+     #232b2b 100%
+  );
+}
+
+#contact h2 {
+  font-size: 4rem;
+  color: white;
+}
+
+.link-section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+  padding: 1.6rem;
+}
+
+.link-section a {
+  color: #046276;
+  margin: 0 auto;
+  text-decoration: none;
+  font-size: 3rem;
+  transition: transform 0.3s;
+}
+
+.link-section a:hover {
+  color: #007c7d;
+  transform: scale(1.2);
+}
+
+.link-section i {
+  padding-right: 0.5rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #046276;
+  font-size: 1.1rem;
+}
+
+.phone p {
+  margin-top: 1.3rem;
+}
+
+.email, .phone p {
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 850px) {
+  body {
+  scroll-behavior: smooth;
+  flex-direction: row;
+  align-items: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  }
+}
